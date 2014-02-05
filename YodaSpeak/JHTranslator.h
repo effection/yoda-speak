@@ -8,6 +8,7 @@
 
 #import <Foundation/Foundation.h>
 #import "JHFormatter.h"
+#import "JHTranslatedMessage.h"
 
 @interface JHTranslator : NSObject
 

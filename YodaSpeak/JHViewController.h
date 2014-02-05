@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface JHViewController : UIViewController
+@interface JHViewController : UIViewController <UITextFieldDelegate, UITableViewDataSource, UITableViewDelegate>
+
 
 @end

@@ -15,11 +15,15 @@
 SPEC_BEGIN(YodaFormatterSpec)
 
 describe(@"Yoda Formatter", ^{
-	NSString *API_KEY = @"dqjn0OEqqUJAORNMnboV6MISSUk8RZgM";
+	NSString *API_KEY = @"SAMPLE_KEY";
 	__block JHYodaFormatter *formatter = nil;
 	
 	beforeEach(^{
 		formatter = [[JHYodaFormatter alloc] initWithAPIKey:API_KEY];
+	});
+	
+	afterEach(^{
+		formatter = nil;
 	});
 	
 	context(@"when creating a new instance", ^{
@@ -55,6 +59,10 @@ describe(@"Yoda Formatter", ^{
 			
 			beforeEach(^{
 				request = [formatter createAPIRequestWithInput:kSampleInput];
+			});
+			
+			afterEach(^{
+				request = nil;
 			});
 			
 			it(@"should exist", ^ {

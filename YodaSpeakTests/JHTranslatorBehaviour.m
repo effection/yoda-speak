@@ -144,7 +144,10 @@ describe(@"translator", ^{
 		
 		it(@"history should contain the correctly translated text", ^{
 			[translator translate:kSampleInput onSuccess:^(NSString *original, NSString *translated) {}];
-			[[translator.history[0] should] equal:kSampleOutput];
+			JHTranslatedMessage *msg = translator.history[0];
+			
+			[[msg.originalText should] equal:kSampleInput];
+			[[msg.translatedText should] equal:kSampleOutput];
 		});
 		
 		it(@"the input text should match the callback original text ", ^{

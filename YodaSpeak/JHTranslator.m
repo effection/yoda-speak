@@ -36,13 +36,13 @@
 		}
 	}
 	[self.outputFormatter format:input onSuccess:^(NSString *original, NSString *formatted) {
-		[self.history addObject:formatted];
+		[self.history addObject:[[JHTranslatedMessage alloc] initWithOriginalText: original andTranslation: formatted ]];
 		
 		if(callback) {
 			callback(original, formatted);
 		}
 	} onError:^(NSString *original, NSError *error) {
-		[self.history addObject:[NSString stringWithFormat:@"Whoops! Could not translate %@ ", original]];
+		[self.history addObject:[[JHTranslatedMessage alloc] initWithOriginalText: original andTranslation: [NSString stringWithFormat:@"Whoops! Could not translate %@ ", original]]];
 		if(errorCallback) {
 			errorCallback(original, error);
 		}

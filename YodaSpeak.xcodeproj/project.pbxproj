@@ -27,6 +27,9 @@
 		7C7A39AE18A1B1DC004E501C /* JHTranslator.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C7A39AD18A1B1DC004E501C /* JHTranslator.m */; };
 		7C7A39B118A1C6EA004E501C /* JHYodaFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C7A39B018A1C6EA004E501C /* JHYodaFormatter.m */; };
 		7C7A39BF18A281EA004E501C /* JHErrors.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C7A39BE18A281EA004E501C /* JHErrors.m */; };
+		7CE3113318A2BB68004AF389 /* JHHistoryCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CE3113218A2BB68004AF389 /* JHHistoryCell.m */; };
+		7CE3113918A2F46C004AF389 /* JHTranslatedMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CE3113818A2F46C004AF389 /* JHTranslatedMessage.m */; };
+		7CE3113B18A2F9B1004AF389 /* JHTranslatedMessageBehaviour.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CE3113A18A2F9B1004AF389 /* JHTranslatedMessageBehaviour.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,6 +74,11 @@
 		7C7A39BD18A281EA004E501C /* JHErrors.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JHErrors.h; sourceTree = "<group>"; };
 		7C7A39BE18A281EA004E501C /* JHErrors.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JHErrors.m; sourceTree = "<group>"; };
 		7CE3113018A2A5A4004AF389 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		7CE3113118A2BB68004AF389 /* JHHistoryCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JHHistoryCell.h; sourceTree = "<group>"; };
+		7CE3113218A2BB68004AF389 /* JHHistoryCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JHHistoryCell.m; sourceTree = "<group>"; };
+		7CE3113718A2F46C004AF389 /* JHTranslatedMessage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JHTranslatedMessage.h; sourceTree = "<group>"; };
+		7CE3113818A2F46C004AF389 /* JHTranslatedMessage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JHTranslatedMessage.m; sourceTree = "<group>"; };
+		7CE3113A18A2F9B1004AF389 /* JHTranslatedMessageBehaviour.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JHTranslatedMessageBehaviour.m; sourceTree = "<group>"; };
 		82DF209CC1F549D2AF6C02ED /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = SOURCE_ROOT; };
 		DD413C63CEA44F28846E590D /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -154,6 +162,10 @@
 				7C7A39B218A1C9BC004E501C /* JHYodaFormatter_Private.h */,
 				7C7A39BD18A281EA004E501C /* JHErrors.h */,
 				7C7A39BE18A281EA004E501C /* JHErrors.m */,
+				7CE3113118A2BB68004AF389 /* JHHistoryCell.h */,
+				7CE3113218A2BB68004AF389 /* JHHistoryCell.m */,
+				7CE3113718A2F46C004AF389 /* JHTranslatedMessage.h */,
+				7CE3113818A2F46C004AF389 /* JHTranslatedMessage.m */,
 			);
 			path = YodaSpeak;
 			sourceTree = "<group>";
@@ -175,6 +187,7 @@
 				7C61F90318A192C400B2AF30 /* Supporting Files */,
 				7C7A39A518A1A37D004E501C /* JHYodaFormatterBehaviour.m */,
 				7C7A39A718A1AEDF004E501C /* JHTranslatorBehaviour.m */,
+				7CE3113A18A2F9B1004AF389 /* JHTranslatedMessageBehaviour.m */,
 			);
 			path = YodaSpeakTests;
 			sourceTree = "<group>";
@@ -354,11 +367,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				7C7A39BF18A281EA004E501C /* JHErrors.m in Sources */,
+				7CE3113918A2F46C004AF389 /* JHTranslatedMessage.m in Sources */,
 				7C61F8EE18A192C400B2AF30 /* JHAppDelegate.m in Sources */,
 				7C7A39B118A1C6EA004E501C /* JHYodaFormatter.m in Sources */,
 				7C7A39AE18A1B1DC004E501C /* JHTranslator.m in Sources */,
 				7C61F8F418A192C400B2AF30 /* JHViewController.m in Sources */,
 				7C61F8EA18A192C400B2AF30 /* main.m in Sources */,
+				7CE3113318A2BB68004AF389 /* JHHistoryCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -366,6 +381,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7CE3113B18A2F9B1004AF389 /* JHTranslatedMessageBehaviour.m in Sources */,
 				7C7A39A818A1AEDF004E501C /* JHTranslatorBehaviour.m in Sources */,
 				7C7A39A618A1A37D004E501C /* JHYodaFormatterBehaviour.m in Sources */,
 			);
